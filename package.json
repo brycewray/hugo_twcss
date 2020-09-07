@@ -3,7 +3,15 @@
   "version": "1.0.0",
   "description": "This is the Hugo version of the repo for https://brycewray.com.",
   "main": "postcss.config.js",
-  "scripts": {},
+  "scripts": {
+    "clean": "rm -rf public",
+    "start": "npm-run-all clean --parallel dev:*",
+    "dev:hugo": "hugo server",
+    "build": "NODE_ENV=production npm-run-all clean --parallel prod:*",
+    "prod:hugo": "hugo --gc --minify",
+    "testbuild": "NODE_ENV=production npm-run-all clean --parallel testProd:*",
+    "testProd:hugo": "hugo server"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -14,17 +22,17 @@
     "jsonfile": "^6.0.1",
     "lazysizes": "^5.2.2",
     "lodash": "^4.17.20",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.1",
     "npm-run-all": "^4.1.5",
     "postcss": "^7.0.32",
     "postcss-clean": "^1.1.0",
-    "postcss-cli": "^7.1.1",
+    "postcss-cli": "^7.1.2",
     "postcss-css-variables": "^0.14.0",
     "postcss-import": "^12.0.1",
     "postcss-nesting": "^7.0.1",
     "postcss-partial-import": "^4.1.0",
     "postcss-preset-env": "^6.7.0",
-    "tailwindcss": "^1.7.6"
+    "tailwindcss": "^1.8.4"
   },
   "engines": {
     "node": "10.x"
