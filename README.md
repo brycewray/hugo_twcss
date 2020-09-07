@@ -14,12 +14,12 @@ See the [online demo](https://hugo-site-css-grid.netlify.app/).
 4. Once you have [installed Hugo](https://gohugo.io/getting-started/installing/), run `npm run start` from your terminal app. You can then view the site in [http://localhost:1313](http://localhost:1313) on your computer.
 5. Read the sample posts and their Markdown files to see how everything works.
 6. Edit the content to make it your own!
-7. When ready, [deploy the site](https://gohugo.io/hosting-and-deployment/) to your chosen host.
+7. When ready, [deploy the site](https://gohugo.io/hosting-and-deployment/) to your chosen host. The `build` command is `npm run build`. (For local testing, you can use `npm run testbuild` to set the environment to `production`; see “What’s under the hood,” below.)
 
 
 ## What’s under the hood
 
-For Hugo users unused to dealing with JavaScript from [npm](https://npmjs.org) plugins and dependencies, this repo may not be your cup of tea, and that’s perfectly understandable.* However, if you’re willing to take a trip to the npm Dark Side, it does offer some interesting add-on possibilities. (That said, Hugo’s single-binary, nearly-everything-out-of-the-box approach has served it well and is impressive.) In `package.json` you’ll find dependencies that make possible the use of [PostCSS](https://postcss.org) and [Tailwind CSS](https://tailwindcss.com).
+For Hugo users unused to dealing with JavaScript from [npm](https://npmjs.org) plugins and dependencies, this repo may not be your cup of tea, and that’s perfectly understandable.* However, if you’re willing to take a trip to the npm Dark Side, it does offer some interesting add-on possibilities. (That said, Hugo’s single-binary, nearly-everything-out-of-the-box approach has served it well and is impressive.) In `package.json`, you’ll find dependencies that make possible the use of [PostCSS](https://postcss.org) and [Tailwind CSS](https://tailwindcss.com). (**Note**: Tailwind’s [built-in use](https://tailwindcss.com/docs/controlling-file-size) of [PurgeCSS](https://purgecss.com/) works **only** in a **production** environment —so, if you want to check that during local testing, use the `npm run testbuild` script in `package.json`.)
 
 In addition, there’s:
 
