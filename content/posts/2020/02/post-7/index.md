@@ -57,4 +57,4 @@ When run, the above would output:
 
 ```
 
-Closing text. That ends Post 7!
+Closing text. That ends Post 7! Just one more to go.
