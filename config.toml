@@ -1,4 +1,4 @@
-# baseURL = "https://example.com" # Change to your site URL and un-comment, of course
+baseURL = "/" # Change to your site URL and un-comment, of course
 languageCode = "en-us" # Change if not appropriate for your site
 title = "Site title goes here"
 theme = "hscg-starter"
