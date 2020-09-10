@@ -5,7 +5,7 @@ module.exports = {
   },
   purge: {
     content: [
-      './layouts/**/*.html',
+      '.themes/hscg-starter/layouts/**/*.html',
     ],
   },
   theme: {
