@@ -1,7 +1,7 @@
 {
   "name": "hugo_site_css-grid",
   "version": "1.0.0",
-  "description": "This is the Hugo version of the repo for https://brycewray.com.",
+  "description": "This is a Hugo starter based on https://brycewray.com.",
   "main": "postcss.config.js",
   "scripts": {
     "clean": "rm -rf public",
