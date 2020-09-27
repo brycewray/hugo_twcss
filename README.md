@@ -1,6 +1,6 @@
 # Hugo starter set
 
-This is a starter set for the [Hugo](https://gohugo.io) [static site generator (SSG)](https://staticgen.com), based on my website at [brycewray.com](https://brycewray.com).
+This is a starter set for the [Hugo](https://gohugo.io) [static site generator (SSG)](https://staticgen.com), based on my website at [brycewray.com](https://brycewray.com). **Note**: This repo **does NOT** use [Hugo Modules](https://gohugo.io/hugo-modules/), which likely will become the increasingly *de rigueur* way to use Hugo. (I’m going to give a try to learning them, but have no sense of urgency about doing so.)
 
 See the [online demo](https://hugo-site-css-grid.netlify.app/).
 
