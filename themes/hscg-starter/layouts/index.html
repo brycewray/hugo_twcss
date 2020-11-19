@@ -20,15 +20,15 @@
        }
      }
  
-     @media (min-width: 992px) {
+     @media (min-width: 1280px) {
        .height-hero {
          background-image: url('{{ $medium.RelPermalink }}')
        }
      }
  
-     @media (min-width: 1200px) {
+     @media (min-width: 1920px) {
        .height-hero {
-         .background-image: url('{{ $large.RelPermalink }}')
+         background-image: url('{{ $large.RelPermalink }}')
        }
      }
    {{ end }}
@@ -45,13 +45,13 @@
   <div class="col-span-3 home-colOne">
     {{ .Content }}
   </div>
-  <div class="col-span-2 border-black border-t lg:border-0 pt-4 lg:pt-0">
+  <div class="col-span-2 border-black border-t lg:border-0 pt-4 lg:pt-0 font-sans">
     <h2 class="h1 mb-4">Recent <a href="/posts/">posts</a></h2>
     {{ range first 7 (where .Site.RegularPages "Section" "posts") }}				
       <div>
         <h2 class="h4 not-italic tracking-tight"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
         <p class="font-bold text-base mt-2 mb-0 leading-5">{{ .Params.Subtitle | markdownify }}</p>
-        <p class="text-xs tracking-normal mt-0 mb-1">
+        <p class="text-xs tracking-normal mt-0 mb-1 dark:text-gray-400">
           Published: <time style="display: inline;" datetime="{{ .PublishDate }}">{{ .PublishDate.Format "January 2, 2006" }}</time><span class="pokey" style="font-variant: small-caps;">&nbsp;utc</span>
           {{ if .Params.Lastmod }}
           <br />Last modified: <time style="display: inline;" datetime="{{ .Params.Lastmod }}">{{ .Params.Lastmod.Format "January 2, 2006" }}</time><span class="pokey" style="font-variant: small-caps;">&nbsp;utc</span>

@@ -61,6 +61,7 @@
 
 code {
   background: #dfefff;
+  @apply dark:bg-gray-800;
 }
 
 code[class*="language-"],
