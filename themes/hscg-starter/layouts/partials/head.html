@@ -26,12 +26,12 @@
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
 
-    <!-- CSS from PostCSS -->
-    {{ $css := resources.Get "css/index.css" }}
-    {{ $css := $css | resources.PostCSS (dict "inlineImports" true) }}
+  <!-- CSS from PostCSS -->
+  {{ $css := resources.Get "css/index.css" }}
+  {{ $css := $css | resources.PostCSS (dict "config" "assets/postcss.config.js" "inlineImports" true "outputStyle" "compressed") | fingerprint }}
 
-    <link rel="preload" as="style" href="{{ $css.RelPermalink }}">
-    <link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
+  <link rel="preload" as="style" href="{{ $css.RelPermalink }}">
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css">
     <style>@-moz-document url-prefix() {.lazy:-moz-loading {visibility:hidden;}}.ieOnly {display: none;}@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {.ieOnly {display: block;}}</style>
     
     <noscript>
