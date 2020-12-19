@@ -35,7 +35,7 @@
     "tailwindcss": "^2.0.2"
   },
   "engines": {
-    "node": "10.x"
+    "node": "12.x"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
