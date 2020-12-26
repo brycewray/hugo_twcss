@@ -3,8 +3,8 @@ title: "Post 6 with its UNIQUE title" # Quotation marks allow colons, semicolons
 subtitle: "The UNIQUE Post 6 subtitle" # Quotation marks allow colons, semicolons, etc.
 description: "The UNIQUE description for Post 6." # Quotation marks allow colons, semicolons, etc.
 author: Your name goes here
-date: 2019-06-08T20:25:00 # This would be 8:25 PM (2025) UTC on June 8, 2019
-lastmod: 2019-07-25T19:05:00 # Comment-out this line with a # if content is unchanged
+date: 2019-06-08T20:25:00-05:00
+lastmod: 2019-07-25T19:05:00-05:00 # Comment-out this line with a # if content is unchanged
 draft: false # Make it "true" if you don't want Hugo to "publish" yet
 featured_image: MailMate_screen_cap_1280x720.jpg # Or whatever image you want to use
 featured_image_alt: Screen capture of the MailMate app # Always include an ALT tag for accessibility

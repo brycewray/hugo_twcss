@@ -3,8 +3,8 @@ title: "Post 4 with its UNIQUE title" # Quotation marks allow colons, semicolons
 subtitle: "The UNIQUE Post 4 subtitle" # Quotation marks allow colons, semicolons, etc.
 description: "The UNIQUE description for Post 4." # Quotation marks allow colons, semicolons, etc.
 author: Your name goes here
-date: 2019-03-02T16:00:00 # This would be 4:00 PM (1600) UTC on March 2, 2019
-lastmod: 2020-01-31T14:13:00 # Comment-out this line with a # if content is unchanged
+date: 2019-03-02T16:00:00-06:00
+lastmod: 2020-01-31T14:13:00-06:00 # Comment-out this line with a # if content is unchanged
 featured_image: typewriter-1031024_1280x853.jpg # Or whatever image you want to use
 featured_image_alt: A very old Royal-brand typewriter # Always include an ALT tag for accessibility
 featured_image_caption: "Image: Pixabay" # Quotation marks allow colons, semicolons, etc.

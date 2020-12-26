@@ -3,8 +3,8 @@ title: "Post 2 with its UNIQUE title" # Quotation marks allow colons, semicolons
 subtitle: "The UNIQUE Post 2 subtitle" # Quotation marks allow colons, semicolons, etc.
 description: "The UNIQUE description for Post 2." # Quotation marks allow colons, semicolons, etc.
 author: Your name goes here
-date: 2018-10-25T07:40:00 # This would be 7:40 (0740) AM UTC on Oct. 25, 2018
-lastmod: 2020-06-13T13:10:00 # Comment-out this line with a # if content is unchanged
+date: 2018-10-25T07:40:00-05:00
+lastmod: 2020-06-13T13:10:00-05:00 # Comment-out this line with a # if content is unchanged
 draft: false # Make it "true" if you don't want Hugo to "publish" yet
 featured_image: computer-1869236_1920x1440.jpg # Or whatever image you want to use
 featured_image_alt: Backlit computer keyboard # Always include an ALT tag for accessibility

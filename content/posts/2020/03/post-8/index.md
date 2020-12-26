@@ -3,7 +3,7 @@ title: "Post 8 with its UNIQUE title" # Quotation marks allow colons, semicolons
 subtitle: "The UNIQUE Post 8 subtitle" # Quotation marks allow colons, semicolons, etc.
 description: "The UNIQUE description for Post 8." # Quotation marks allow colons, semicolons, etc.
 author: Your name goes here
-date: 2020-03-10T09:50:00 # This would be 9:50 AM (0950) UTC on March 10, 2020
+date: 2020-03-10T09:50:00-05:00
 #lastmod: TBD # As with the other posts, use this only if the content has changed since original date
 draft: false # Make it "true" if you don't want Hugo to "publish" yet
 featured_image: door-bear-for-newborn-Kennedy-Beck_edit_1280x720.jpg # Or whatever image you want to use
