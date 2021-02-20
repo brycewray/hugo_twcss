@@ -8,9 +8,11 @@ body {
   font-feature-settings: "liga" 1;
 }
 
+/*
 #content {
   @apply pt-12;
 }
+*/
 
 p, li {
   /* for handling Markdown-created <p> and <li> */
@@ -339,9 +341,11 @@ hr {
     @apply text-gray-200;
   }
 
+  /*
   footer {
     background: linear-gradient(rgba(0,0,0,0),#0500a9);
   }
+  */
 
   blockquote {
     @apply text-gray-500;

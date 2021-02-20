@@ -1,69 +1,30 @@
 {{ define "main" }}
 
-<style type="text/css">
-  {{ if .Params.featured_image }}
-   {{ with .Resources.GetMatch (.Params.featured_image) }}
-     {{ $extraSmall := .Resize "768x" }}
-     {{ $small := .Resize "992x" }}
-     {{ $medium := .Resize "1200x" }}
-     {{ $large := .Fill "1920x516 center"}}
-     
-     @media (max-width: 767px) {
-       .height-hero {
-         background-image: url('{{ $extraSmall.RelPermalink }}')
-       }
-     }
- 
-     @media (min-width: 768px) {
-       .height-hero {
-         background-image: url('{{ $small.RelPermalink }}')
-       }
-     }
- 
-     @media (min-width: 1280px) {
-       .height-hero {
-         background-image: url('{{ $medium.RelPermalink }}')
-       }
-     }
- 
-     @media (min-width: 1920px) {
-       .height-hero {
-         background-image: url('{{ $large.RelPermalink }}')
-       }
-     }
-   {{ end }}
- {{ end }}
- </style>
- 
-<div class="w-full height-hero"></div>
-{{ if index .Params "featured_image_caption" }}
-<p class="text-center text-xs tracking-normal mt-1 font-sans">{{ index .Params "featured_image_caption" }}</p>
-{{ end }}
-
-
-<div class="container px-8 lg:grid lg:grid-cols-5 lg:gap-16 lg:w-5/6 mr-auto ml-auto">
-  <div class="col-span-3 home-colOne">
-    {{ .Content }}
+<div class="pt-6 lg:pt-12 lg:flex w-full mr-auto ml-auto">
+  <div class="bg-transparent lg:bg-gradient-to-b from-blue-700 to-black lg:dark:bg-gradient-to-b lg:dark:from-black lg:dark:to-blue-700 lg:w-5/12 px-8 lg:pl-16 lg:pr-16 pt-16 lg:text-white text-center lg:text-right">
+    <h1 class="lg:leading-normal text-3xl lg:text-4xl 2xl:text-6xl lg:pt-10">Home page</h1>
+    <p class="font-sans">This sentence comes from the template.</p>
+    <div class="font-sans">{{ .Content }}</div>
   </div>
-  <div class="col-span-2 border-black border-t lg:border-0 pt-4 lg:pt-0 font-sans">
-    <h2 class="h1 mb-4">Recent <a href="/posts/">posts</a></h2>
-    {{ range first 7 (where .Site.RegularPages "Section" "posts") }}				
+  <div class="text-center lg:text-left lg:w-7/12 lg:pl-16 lg:pt-16">
+    <div class="mt-8 border-blue-700 dark:border-white mx-auto my-auto w-3/5 border-solid border-b-4 lg:hidden"></div>
+    <h2 class="h1 mt-4 lg:mt-0 mb-4 lg:mb-10 text-3xl lg:text-5xl 2xl:text-7xl">Latest <a href="/posts/">posts</a></h2>
+    {{ range first 3 (where .Site.RegularPages "Section" "posts") }}				
       <div>
-        <h2 class="h4 not-italic tracking-tight"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
-        <p class="font-bold text-base mt-2 mb-0 leading-5">{{ .Params.Subtitle | markdownify }}</p>
-        <p class="text-xs tracking-normal mt-0 mb-1 dark:text-gray-400">
-          Published: <time style="display: inline;" datetime="{{ .PublishDate }}">{{ .PublishDate.Format "January 2, 2006" }}</time>
+        <h2 class="not-italic tracking-tight text-2xl lg:text-3xl 2xl:text-4xl"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
+        <p class="font-sans font-bold mt-1 mb-0 leading-5 text-xl lg:text-2xl 2xl:text-3xl">{{ .Params.Subtitle | markdownify }}</p>
+        <p class="font-sans text-sm tracking-normal mt-1 mb-0 dateInfo">
+          <time class="inline" datetime="{{ .PublishDate }}"><strong>{{ .PublishDate.Format "January 2, 2006" }}</strong></time>
           {{ if .Params.Lastmod }}
-          <br />Last modified: <time style="display: inline;" datetime="{{ .Params.Lastmod }}">{{ .Params.Lastmod.Format "January 2, 2006" }}</time>
+          <br />Last modified <time class="inline" datetime="{{ .Params.Lastmod }}">{{ .Params.Lastmod.Format "January 2, 2006" }}</time>
         {{ end }}
-        </p>
-        
-        <p class="text-sm mt-2 mb-3">
+        </p>        
+        <p class="font-sans text-base mt-1 mb-4 lg:mb-10">
           {{ .Description }}
         </p>
       </div>
     {{ end }}
-    <p><a href="/posts/"><strong>All {{ len (where .Site.RegularPages "Section" "posts") }} posts</strong></a> <span class="text-sm"><em>(listed five per page)</em></span></p>
+    <p class="font-sans"><a href="/posts/"><strong>All {{ len (where .Site.RegularPages "Section" "posts") }} posts</strong></a> <span class="text-sm"><em>(listed five per page)</em></span></p>
   </div>
 </div>
 {{ end }}

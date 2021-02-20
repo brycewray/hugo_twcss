@@ -1,0 +1,8 @@
+<div class="font-sans text-center relative h-auto px-8 pt-12 lg:px-16 2xl:px-32">
+  <div class="block w-full">
+    <h1 class="my-0 mx-auto text-center px-4 lg:px-12 2xl:px-16 pt-8 lg:pt-12 2xl:pt-16 text-4xl lg:text-6xl 2xl:text-7xl leading-none tracking-tight">{{ .Title | markdownify}}</h1>
+    {{- if .Params.Subtitle }}<h2 class="pt-3 lg:pt-4 2xl:pt-12 text-2xl lg:text-4xl 2xl:text-5xl">{{ .Params.Subtitle | markdownify }}</h2>{{- end }}
+    {{- if .Params.Description }}<p class="pt-4 lg:pt-8 2xl:pt-16 text-lg lg:text-3xl 2xl:text-4xl lg:tracking-tight leading-snug 2xl:leading-tight">{{ .Params.Description }}</p>{{- end }}
+    <p class="text-lg lg:text-xl 2xl:text-2xl"><strong>{{ .PublishDate.Format "January 2, 2006" }}</strong>{{- if ne .PublishDate .Lastmod }}<br /><span style="font-size: 75%;">Last modified {{ .Lastmod.Format "January 2, 2006" }}</span>{{- end }}</p>
+  </div>
+</div>
