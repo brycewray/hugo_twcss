@@ -1,5 +1,5 @@
 {
-  "name": "hugo_site_css-grid",
+  "name": "hugo_twcss",
   "description": "This is a Hugo starter based on https://brycewray.com.",
   "main": "postcss.config.js",
   "scripts": {
