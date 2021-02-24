@@ -1,9 +1,0 @@
-# Netlify instructions to control build
-
-[build]
-  command = "npm run build"
-
-[context.production.environment]
-  HUGO_VERSION = "0.81.0" # substitute whichever version you prefer
-  HUGO_ENV = "production"
-  
