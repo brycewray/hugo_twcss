@@ -11,11 +11,8 @@ featured_image_alt: Backlit computer keyboard # Always include an ALT tag for ac
 featured_image_caption: "Image: Pixabay" # Quotation marks allow colons, semicolons, etc.
 ---
 
-<div class="yellowBox">
-	<p><strong>Note</strong>: Maybe you have a note here about why you updated the post, for example. In that case, this <code>yellowBox</code> CSS/SCSS class is useful.</p>
-</div>
-&nbsp;<br />
-
+**Note**: Maybe you have a note here about why you updated the post, for example. In that case, this `yellowBox` CSS/SCSS class is useful. This enhanced attributes-handling (note the `{.yellowBox}` below this paragraph in the post's Markdown) was added in Hugo v.0.81.0.
+{.yellowBox}
 
 Your opening text goes here.
 
