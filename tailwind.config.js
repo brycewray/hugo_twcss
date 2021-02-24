@@ -3,7 +3,7 @@ const colors = require('tailwindcss/colors')
 module.exports = {
   purge: {
     content: [
-      './themes/hscg-starter/layouts/**/*.html',
+      './themes/hugo-twcss/layouts/**/*.html',
     ],
   },
   darkMode: 'media',
