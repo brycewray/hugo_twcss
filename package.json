@@ -30,7 +30,7 @@
     "postcss-cli": "^8.3.1",
     "postcss-css-variables": "^0.17.0",
     "postcss-import": "^14.0.1",
-    "postcss-nesting": "^8.0.0",
+    "postcss-nesting": "^8.0.1",
     "postcss-partial-import": "^4.1.0",
     "postcss-preset-env": "^6.7.0",
     "tailwindcss": "^2.1.2"
