@@ -1,6 +1,6 @@
 # Hugo starter set
 
-This is a starter set for the [Hugo](https://gohugo.io) [static site generator (SSG)](https://staticgen.com), based on the look-and-feel of my website at [brycewray.com](https://brycewray.com). **Note**: This repo **does NOT** use [Hugo Modules](https://gohugo.io/hugo-modules/).
+This is a starter set for the [Hugo](https://gohugo.io) [static site generator (SSG)](https://staticgen.com), based on the look-and-feel of my website at [brycewray.com](https://www.brycewray.com). **Note**: This repo **does NOT** use [Hugo Modules](https://gohugo.io/hugo-modules/).
 
 See the [online demo](https://hugo-twcss.vercel.app/).
 
