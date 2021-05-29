@@ -4,7 +4,10 @@ module.exports = {
       path: ['themes/hugo-twcss/assets/css']
     }),
     require('tailwindcss'),
-    require('postcss-preset-env')({ stage: 1 }),
-    require('postcss-clean'),
+    require('autoprefixer'),
+    require('postcss-nesting'),
+    require('postcss-csso')({
+      restructure: true
+    })
   ],
 }
