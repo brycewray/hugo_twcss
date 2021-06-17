@@ -24,5 +24,6 @@ In addition, there’s:
 - Lazy-loading of in-body images through use of [lazyload](https://github.com/verlok/vanilla-lazyload).
 - Responsive images through Hugo’s [built-in image processing capabilities](https://gohugo.io/content-management/image-processing/), using code borrowed shamelessly (and, where necessary, adapted for later versions of Hugo) from Stereobooster’s “[Responsive images for Hugo](https://dev.to/stereobooster/responsive-images-for-hugo-dn9)” and Strict Panda’s “[Using Image Processing to Load Images in Hugo](https://blog.strict-panda.com/post/image-processing-media-queries/).” (The **real** site’s repo uses [Cloudinary](https://cloudinary.com) rather than having the images in the repo and processing them as such.)
 
+*Effective 2021-06-17, development on this repository will be* ***on hold*** *at least until Hugo is compatible with Tailwind CSS’s Just-in-Time mode (see [Hugo issue 8343](https://github.com/gohugoio/hugo/issues/8343)).*
 
 \* If you don’t care for dealing with Node.js dependencies, you may be interested in another Hugo repo, [hugo_solo](https://github.com/brycewray/hugo_solo), which offers the same lazy-loading and image processing **but** uses [SCSS](https://sass-lang.com/) [through Hugo Pipes](https://gohugo.io/hugo-pipes/scss-sass/) instead of Tailwind CSS and PostCSS.
