@@ -20,23 +20,23 @@
     "maintained node versions"
   ],
   "devDependencies": {
-    "autoprefixer": "^10.2.6",
+    "autoprefixer": "^10.3.1",
     "cross-env": "^7.0.3",
     "from-env": "^1.1.4",
     "get-json": "^1.0.1",
     "jsonfile": "^6.1.0",
     "lazysizes": "^5.3.2",
     "lodash": "^4.17.21",
-    "luxon": "^1.27.0",
+    "luxon": "^2.0.2",
     "node-fetch": "^2.6.1",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.3.5",
+    "postcss": "^8.3.6",
     "postcss-cli": "^8.3.1",
     "postcss-css-variables": "^0.18.0",
     "postcss-csso": "^5.0.1",
     "postcss-import": "^14.0.2",
     "postcss-nesting": "^8.0.1",
     "postcss-partial-import": "^4.1.0",
-    "tailwindcss": "^2.1.4"
+    "tailwindcss": "^2.2.7"
   }
 }
