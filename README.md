@@ -1,6 +1,6 @@
 # Hugo starter set
 
-**Note**: Further development suspended as of 2021-09-11.
+**Note**: Further development suspended as of 2021-09-11 **but**, on 2021-11-02, I went back in and made the repo compatible with [Tailwind CSS’s just-in-time (JIT) mode](https://tailwindcss.com/docs/just-in-time-mode). For more details on how I got Tailwind JIT to work with Hugo, see "[Making Tailwind JIT work with Hugo](https://www.brycewray.com/posts/2021/11/making-tailwind-jit-work-hugo)."
 
 This is a starter set for the [Hugo](https://gohugo.io) [static site generator (SSG)](https://staticgen.com), based on the look-and-feel of my website at [brycewray.com](https://www.brycewray.com). **Note**: This repo **does NOT** use [Hugo Modules](https://gohugo.io/hugo-modules/).
 
@@ -19,7 +19,7 @@ See the [online demo](https://hugo-twcss.vercel.app/).
 
 ## What’s under the hood
 
-For Hugo users unused to dealing with JavaScript from [Node.js](https://nodejs.org) plugins and dependencies, this repo may not be your cup of tea, and that’s perfectly understandable.* However, if you’re willing to take a trip to the Dark Side, it does offer some interesting add-on possibilities. (That said, Hugo’s single-binary, nearly-everything-out-of-the-box approach has served it well and is impressive.) In `package.json`, you’ll find dependencies that make possible the use of [PostCSS](https://postcss.org) and [Tailwind CSS](https://tailwindcss.com). (**Note**: Tailwind’s [built-in use](https://tailwindcss.com/docs/controlling-file-size) of [PurgeCSS](https://purgecss.com/) works **only** in a **production** environment—so, if you want to check that during local testing, use the `npm run testbuild` script in `package.json`.)
+For Hugo users unused to dealing with JavaScript from [Node.js](https://nodejs.org) plugins and dependencies, this repo may not be your cup of tea, and that’s perfectly understandable.* However, if you’re willing to take a trip to the Dark Side, it does offer some interesting add-on possibilities. (That said, Hugo’s single-binary, nearly-everything-out-of-the-box approach has served it well and is impressive.) In `package.json`, you’ll find dependencies that make possible the use of [PostCSS](https://postcss.org) and [Tailwind CSS](https://tailwindcss.com).
 
 In addition, there’s:
 
