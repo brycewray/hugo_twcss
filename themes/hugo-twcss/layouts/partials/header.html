@@ -1,21 +1,30 @@
-
-    <header class="h-12 bg-black dark:bg-blue-700 w-full fixed p-0 mt-0 z-50 font-sans">
-      <p class="text-white font-bold mt-2 pt-1 text-lg ml-4 md:ml-8 lg:ml-10 w-full"><a href="/" class="text-white active:text-gray-400 hover:text-gray-400" style="border: 0 !important; text-decoration: none !important;">{{.Site.Title}}</a></p>
-      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true" />
-      <label for="nav-toggle" class="nav__icon" aria-hidden="true">
-      Expand the menu
-          <span class="nav__icon-line"></span>
-          <span class="nav__icon-line"></span>
-          <span class="nav__icon-line"></span>
-      </label>
-      <nav role="navigation" class="nav">
-        <ul class="nav__items">
-          {{ $currentPage := . }}
-          {{ range .Site.Menus.main }}
-            <li class="nav__item">
-              <a href="{{ .URL | relURL }}" title="{{ .Title }}">{{ .Name }}</a>
-            </li>
-          {{ end }}
-          </ul>
-      </nav>
-    </header>
+<header class="font-sans fixed w-full mt-0 bg-black dark:bg-blue-800 z-[9999]">
+  <nav class="text-white bg-black dark:bg-blue-800">
+    <input
+      type="checkbox"
+      id="nav-Checkbox"
+      aria-label="Navigation"
+      aria-haspopup="true"
+      aria-expanded="false"
+      aria-controls="menu"
+      class="hidden"
+    />
+    <label for="nav-Checkbox" id="nav-Toggle" class="absolute lg:hidden cursor-pointer my-1 mx-4 right-0">
+      <svg id="svg-menu" class="w-6 fill-white mt-[0.3rem]" viewBox="0 0 448 512" width="100" title="bars"><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" /></svg>
+      <svg id="svg-close" class="w-6 fill-white hidden" viewBox="0 0 384 512" width="100" title="times"><path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" /></svg>
+    </label>
+    <ul class="nav-Menu bg-black dark:bg-blue-800 flex flex-col lg:flex-row gap-4 lg:gap-2 text-right my-2 lg:mt-1 lg:mb-0 mr-2 lg:mr-6 ml-0 mbs-0 mbe-0 pis-0">
+      <li class="block py-2 my-0 mr-auto ml-6 lg:mt-0 lg:mb-1 lg:tracking-normal lg:leading-none">
+        <a href="/" class="text-white text-base active:text-gray-400 hover:text-gray-400" style="border: 0 !important; text-decoration: none !important;" aria-label="Home page">
+          <strong>{{ .Site.Title }}</strong>
+        </a>
+      </li>
+      {{ $currentPage := . }}
+      {{ range .Site.Menus.main }}
+        <li class="list-none hidden font-bold lg:text-sm lg:block lg:uppercase pr-3 my-0 lg:mt-[0.65rem] lg:mx-0">
+          <a href="{{ .URL | relURL }}" class="no-underline border-0 hover:border-0 text-white hover:text-gray-300 focus:text-gray-300 active:text-gray-300" title="{{ .Title }}" aria-label="{{ .Title }}">{{ .Name }}</a>
+        </li>
+      {{ end }}
+    </ul>
+  </nav>
+</header>
