@@ -21,22 +21,13 @@
   ],
   "devDependencies": {
     "autoprefixer": "^10.4.0",
-    "cross-env": "^7.0.3",
-    "from-env": "^1.1.4",
-    "get-json": "^1.0.1",
-    "jsonfile": "^6.1.0",
-    "lazysizes": "^5.3.2",
-    "lodash": "^4.17.21",
-    "luxon": "^2.0.2",
-    "node-fetch": "^3.0.0",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.3.11",
     "postcss-cli": "^9.0.1",
     "postcss-css-variables": "^0.18.0",
-    "postcss-csso": "^5.0.1",
     "postcss-import": "^14.0.2",
-    "postcss-nesting": "^9.0.0",
-    "postcss-partial-import": "^4.1.0",
-    "tailwindcss": "^2.2.19"
+    "rimraf": "^3.0.2",
+    "tailwindcss": "^2.2.19",
+    "tailwindcss-logical": "^2.0.0"
   }
 }
