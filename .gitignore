@@ -11,4 +11,7 @@ node_modules
 .npmrc
 # Local Netlify folder
 .netlify
+
+/assets/css/index.css
 /themes/hugo-twcss/assets/css/index.css
+.hugo_build.lock
