@@ -9,6 +9,10 @@ module.exports = {
   ],
   darkMode: 'media',
   theme: {
+    fill: theme => ({
+      current: 'currentColor',
+      white: theme('colors.white'),
+    }),
     colors: {
       transparent: 'transparent',
       white: '#ffffff',
@@ -28,6 +32,13 @@ module.exports = {
       },
     },
   },
-  variants: {},
-  plugins: [], // if we add forms, do it here
+  variants: {
+    logical: [
+      'responsive',
+      'hover'
+    ],
+  },
+  plugins: [
+    require('tailwindcss-logical'),
+  ], // if we add forms, do it here
 }
