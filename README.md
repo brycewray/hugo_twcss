@@ -1,6 +1,6 @@
 # Hugo starter set
 
-**Note**: Further development suspended as of 2021-09-11 **but**, on 2021-11-02, I went back in and made the repo compatible with [Tailwind CSS’s just-in-time (JIT) mode](https://tailwindcss.com/docs/just-in-time-mode). For more details on how I got Tailwind JIT to work with Hugo, see "[Making Tailwind JIT work with Hugo](https://www.brycewray.com/posts/2021/11/making-tailwind-jit-work-hugo)."
+**Note**: Further development suspended as of 2021-09-11 **but**, on 2021-11-02, I went back in and made the repo compatible with [Tailwind CSS’s just-in-time (JIT) mode](https://tailwindcss.com/docs/just-in-time-mode). For details on how I did this, see "[Making Tailwind JIT work with Hugo](https://www.brycewray.com/posts/2021/11/making-tailwind-jit-work-hugo)."
 
 This is a starter set for the [Hugo](https://gohugo.io) [static site generator (SSG)](https://staticgen.com), based on the look-and-feel of my website at [brycewray.com](https://www.brycewray.com). **Note**: This repo **does NOT** use [Hugo Modules](https://gohugo.io/hugo-modules/).
 
