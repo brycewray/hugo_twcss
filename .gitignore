@@ -14,4 +14,5 @@ node_modules
 
 /assets/css/index.css
 /themes/hugo-twcss/assets/css/index.css
+/themes/twjit/assets/css/index.css
 .hugo_build.lock
